@@ -10,9 +10,9 @@ while row < src.count do
       if src[row][element] < current_min
         current_min = src[row][element]
       end
-      mins << current_min
       element += 1
     end 
+    mins << current_min
     row += 1 
 end 
 mins

@@ -8,8 +8,13 @@ while row < src.count do
   min_each = []
   current_min = src[row][element]
     while element < src[row].count do
-      if src[row][element] <
+      if src[row][element] < current_min
+        current_min = src[row][element]
+      end
+      min_each << current_min
+      element += 1
     end 
+    row += 1 
 end 
-
+min_each
 end
